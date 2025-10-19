@@ -1,0 +1,6 @@
+venv_311/
+data/videos/
+*.mp4
+__pycache__/
+*.pyc
+.DS_Store

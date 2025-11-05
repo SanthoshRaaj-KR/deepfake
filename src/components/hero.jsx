@@ -82,9 +82,7 @@ const HeroSection = ({ Loaded, onFaceModelLoaded, activeSection }) => {
   // Keep only links up to "News"
   const navLinks = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
     { id: 'products', label: 'Products' },
-    { id: 'news', label: 'News' },
   ];
 
   // Centered cyan highlight for active link
@@ -116,9 +114,6 @@ const HeroSection = ({ Loaded, onFaceModelLoaded, activeSection }) => {
 {/* Fixed Navbar */}
       <nav className="w-full fixed top-0 z-50">
         <div className="relative flex items-center px-[4vw] py-6 w-full">
-          <div className="absolute left-[2vw] flex items-center">
-            <img src="/logoGenReal.png" alt="GenReal.AI Logo" className="h-[3.5rem]" />
-          </div>
 
           <ul className="hidden md:flex justify-center items-center w-full text-[clamp(1rem,1.5vw,1.25rem)] gap-16 font-light">
             {navLinks.map((link) => (

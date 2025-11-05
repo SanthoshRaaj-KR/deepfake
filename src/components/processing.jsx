@@ -101,7 +101,7 @@ const Processing = ({ onComplete, fileData, analysisType }) => {
         abortRequest();
       }, timeoutDuration);
 
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      const response = await fetch(`http://localhost:5001${endpoint}`, {
         method: 'POST',
         body: formData,
         signal: globalAbortController.signal,
